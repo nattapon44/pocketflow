@@ -1,0 +1,28 @@
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+secrets.json
+
+# Dependencies / cache
+node_modules/
+.cache/
+
+# Backups
+*.bak
+*.backup
+*.old
+*.zip
+
+# Personal financial data / exports
+*backup*.json
+*pocketflow*.json
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
