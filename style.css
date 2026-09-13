@@ -1,0 +1,161 @@
+/* thai */
+@font-face {
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  font-stretch: 100%;
+  src: url(fonts/noto-sans-thai-thai.woff2) format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  font-stretch: 100%;
+  src: url(fonts/noto-sans-thai-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  font-stretch: 100%;
+  src: url(fonts/noto-sans-thai-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root{--bg:#f5f6f2;--surface:#fff;--text:#253a33;--muted:#77817b;--line:#e5e9e2;--green:#24634f;--red:#bb6550;--soft:#edf2eb;--shadow:0 5px 24px #20352a04}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,sans-serif}body.dark{--bg:#17211d;--surface:#202e27;--text:#edf2e9;--muted:#a4b2a8;--line:#36473c;--green:#91d5b5;--red:#efa18c;--soft:#2c3d32}button,input,select{font:inherit}button,a,input,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer;border:0;min-height:44px;border-radius:10px;transition:background .15s,transform .15s}button:active{transform:translateY(1px)}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #83bda0;outline-offset:3px}button[hidden]{display:none}.app{max-width:1240px;margin:auto;padding:0 40px}header{display:flex;justify-content:space-between;align-items:center;padding:30px 0;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text);font-size:19px;font-weight:750;letter-spacing:1.3px}.brand small{display:block;font-size:12px;color:var(--muted);font-weight:400;letter-spacing:.3px}.logo{background:#254f41;color:#e1efb5;width:43px;height:43px;border-radius:13px;display:grid;place-items:center;font-size:29px}.icon{background:var(--surface);color:var(--text);width:44px;font-size:22px;border:1px solid var(--line)}.page-title{display:flex;justify-content:space-between;align-items:center;margin:39px 0 26px;gap:20px}.eyebrow{color:var(--muted);font-size:10px;letter-spacing:1.7px;font-weight:700;margin:0 0 7px}h1{font-size:29px;letter-spacing:-.7px;margin:0;font-weight:650}h2{font-size:18px;margin:0;font-weight:650}.muted{color:var(--muted)}p{margin:7px 0}.primary{background:#285944;color:#fff;padding:12px 22px;font-weight:600;box-shadow:0 4px 10px #234e4310}.primary:hover{background:#347052}.quiet{background:transparent;color:var(--muted);padding:8px 13px}.quiet:hover,.quiet[aria-pressed=true]{background:var(--soft);color:var(--text)}.period{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.period>div{display:flex;align-items:center;gap:6px}.period .icon{border:0;background:transparent}.period input{background:transparent;border:0;color:var(--text);width:160px;font-weight:600;min-height:44px}.summary{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:16px;margin-bottom:26px}.summary article{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:23px;box-shadow:var(--shadow);min-width:0}.summary article>span{display:block;color:var(--muted);font-size:13px}.card-icon{float:right;font-size:19px}.summary strong{display:block;font-size:28px;font-weight:600;letter-spacing:-.8px;margin:12px 0 7px;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}.summary small{color:var(--muted);font-size:11px;letter-spacing:0}.summary .balance{background:#254f41;color:#fff;border-color:#254f41}.balance>span,.balance small{color:#c2d5c7!important}.income{color:var(--green)}.expense{color:var(--red)}.grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.35fr);gap:24px;align-items:start}.panel{background:var(--surface);border:1px solid var(--line);border-radius:19px;padding:26px;box-shadow:var(--shadow)}.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px}.tag{font-size:10px;background:var(--soft);padding:5px 9px;border-radius:6px;color:var(--muted);white-space:nowrap}.chart-wrap{display:grid;place-items:center;padding:27px 0}.donut{height:194px;width:194px;border-radius:50%;background:var(--line);display:grid;place-items:center}.donut>div{background:var(--surface);width:152px;height:152px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center}.donut small{color:var(--muted);font-size:12px}.donut strong{font-size:22px;max-width:145px;overflow-wrap:anywhere;text-align:center}.category{display:grid;grid-template-columns:10px 1fr auto;gap:10px;align-items:center;padding:10px 0;font-size:13px}.swatch{width:8px;height:8px;border-radius:50%}.category small{color:var(--muted);margin-left:7px}.category b{font-weight:550}.tabs{display:flex;gap:4px;background:var(--bg);padding:4px;border-radius:10px;margin:23px 0 8px;width:fit-content}.tabs button{background:transparent;color:var(--muted);padding:7px 18px;min-height:38px;font-size:13px}.tabs button[aria-pressed=true]{background:var(--surface);color:var(--text);box-shadow:0 2px 5px #00000008}.entry{display:grid;grid-template-columns:42px minmax(0,1fr) auto;gap:12px;align-items:center;padding:17px 0;border-bottom:1px solid var(--line)}.badge{width:40px;height:40px;border-radius:12px;background:var(--soft);display:grid;place-items:center;font-size:20px}.entry b{font-weight:600;font-size:14px}.entry p{color:var(--muted);font-size:12px;margin:2px 0;overflow-wrap:anywhere}.entry time{font-size:11px;color:var(--muted)}.entry-right{text-align:right}.entry-right strong{font-size:15px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}.actions{display:flex;justify-content:flex-end;gap:4px}.actions button{background:transparent;color:var(--muted);font-size:11px;padding:4px 8px;min-height:36px}.actions button:hover{background:var(--soft)}.empty{text-align:center;padding:48px 15px;color:var(--muted);font-size:13px}.empty-symbol{font-size:32px;display:block;color:var(--green);margin-bottom:12px}.empty h3{color:var(--text);font-size:16px;margin:0 0 6px}.spending .empty{padding:5px 0 16px}footer{display:flex;justify-content:space-between;gap:15px;font-size:11px;color:var(--muted);padding:30px 0 36px}.dot{margin:0 8px}.mobile-add{display:none}dialog{color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:30px;width:min(480px,calc(100% - 32px));max-height:90dvh;overflow:auto;box-shadow:0 20px 100px #0003}dialog::backdrop{background:#15291f77;backdrop-filter:blur(4px)}form label{display:block;font-size:13px;margin-top:18px}form input,form select{display:block;width:100%;min-height:48px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--text);margin-top:6px;min-width:0}#amount{font-size:27px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.wide{width:100%}#error{font-size:13px;min-height:21px;margin:13px 0}.confirm-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:22px}.danger{background:#ab4f3c;color:white;padding:10px 20px}#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--text);color:var(--surface);padding:12px 22px;border-radius:12px;z-index:5;display:none;max-width:90%;font-size:13px}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}body.dark input{color-scheme:dark}@media(max-width:950px){.summary{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr 1.25fr}.app{padding:0 24px}.panel{padding:20px}.summary strong{font-size:26px}}@media(max-width:650px){.app{padding:0 18px}header{padding:20px 0}.brand{font-size:17px}.page-title{margin-top:28px}h1{font-size:24px}.page-title .muted{font-size:13px}.page-title>.add{display:none}.summary{gap:10px;margin-bottom:18px}.summary article{padding:17px}.summary strong{font-size:23px}.summary article>span{font-size:12px}.summary small{font-size:10px}.grid{grid-template-columns:1fr;gap:18px}.panel{padding:20px}.spending{order:1}.transactions{order:0}.mobile-add{display:block;position:fixed;bottom:max(18px,env(safe-area-inset-bottom));right:18px;z-index:2;border-radius:30px;padding:14px 23px;box-shadow:0 5px 25px #15312435}footer{flex-direction:column;padding-bottom:105px;gap:4px}.period{font-size:13px}.period input{width:145px}.period .icon{width:30px}.entry{gap:9px;grid-template-columns:36px minmax(0,1fr) auto}.badge{width:34px;height:38px}.entry-right strong{font-size:13px}.entry b{font-size:13px}.tabs button{padding:7px 15px}dialog#editor{width:100%;max-width:none;margin:auto 0 0;border-radius:22px 22px 0 0;padding:24px 20px max(24px,env(safe-area-inset-bottom))}.form-grid{gap:10px}#toast{bottom:86px}}
+
+/* POCKETFLOW refinement: navy palette, readable Thai UI, and bilingual controls. */
+:root{--bg:#f3f6fa;--surface:#fff;--text:#172d4d;--muted:#596b82;--line:#dce4ef;--green:#286e92;--red:#b54e4b;--soft:#edf2f9;--shadow:0 6px 24px #18345d06}
+body{font-family:"Leelawadee UI","Noto Sans Thai",Tahoma,"Segoe UI",Arial,sans-serif;font-size:16px;line-height:1.7}
+body.dark{--bg:#101b2d;--surface:#19283f;--text:#edf3fc;--muted:#b0bfd5;--line:#34445f;--green:#8bc9e2;--red:#ffa8a2;--soft:#243650}
+.logo{background:#203b67;color:#fff}.brand{letter-spacing:.9px}.brand small{font-size:13px;letter-spacing:0}
+.primary{background:#2859a0;box-shadow:0 4px 12px #1d46731c}.primary:hover{background:#1e4887}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline-color:#6a9ee8}
+.summary .balance{background:#203b67;border-color:#203b67}.balance>span,.balance small{color:#d0def4!important}
+.page-title .muted{font-size:15px}.eyebrow{font-size:11px;letter-spacing:1px;line-height:1.7}html[lang=th] .eyebrow{letter-spacing:.2px;font-size:12px}
+h1{font-size:30px;line-height:1.45;letter-spacing:-.3px}h2{font-size:19px;line-height:1.5}
+.summary article>span{font-size:14px}.summary strong{font-family:"Segoe UI",Arial,sans-serif;font-variant-numeric:tabular-nums;line-height:1.35;margin:15px 0 10px}.summary small{font-size:12px;line-height:1.6}
+.header-actions,.dialog-actions{display:flex;align-items:center;gap:12px}.language-switch{display:flex;border:1px solid var(--line);border-radius:10px;padding:3px;background:var(--soft)}.language-switch button{font-size:12px;font-weight:700;min-width:39px;min-height:38px;background:transparent;color:var(--muted);border-radius:7px}.language-switch button[aria-pressed=true]{background:var(--surface);color:var(--text);box-shadow:0 1px 5px #10254b15}.language-switch button:hover{color:var(--text)}
+.month-picker{position:relative;min-width:166px;display:grid;align-items:center;min-height:44px;text-align:center;border-radius:8px}.month-picker #month{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}.month-picker:focus-within{outline:3px solid #6a9ee8;outline-offset:2px}#monthLabel{font-size:15px;font-weight:600;white-space:nowrap;pointer-events:none}
+.entry{padding:20px 0;grid-template-columns:42px minmax(0,1fr) minmax(105px,auto);align-items:start}.entry .badge{margin-top:3px}.entry b{display:block;font-size:15px;line-height:1.6;overflow-wrap:anywhere}.entry time{display:block;margin-top:6px;font-size:12px;line-height:1.6}.entry p{font-size:13px;line-height:1.65;margin:5px 0 0}.entry-right strong{display:block;font-size:16px;line-height:1.6}.entry-right{max-width:190px}.actions{margin-top:4px;gap:3px}.actions button{font-size:12px;min-height:44px;padding:6px 9px;border-radius:7px}.actions button:last-child:hover{color:var(--red)}
+.category{font-size:14px;grid-template-columns:10px minmax(0,1fr) auto}.category>span{overflow-wrap:anywhere}.category small{font-size:12px}.tag{font-size:11px}.donut small{font-size:13px}.empty{font-size:14px}.empty h3{font-size:17px}.tabs button{font-size:14px;min-height:44px}.quiet{font-size:14px}footer{font-size:12px}
+form label{font-size:14px}form input,form select{font-size:16px}#error{font-size:14px}.dialog-actions{gap:6px}.dialog-actions .language-switch button{min-width:33px}#editor .section-head{align-items:flex-start;flex-wrap:wrap}#editor .section-head>div:first-child{flex:1 1 180px}dialog::backdrop{background:#0c1b3677}.danger:hover{background:#903e3b}
+@media(max-width:950px){.summary strong{font-size:26px}.grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr)}}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.app{padding:0 16px}.brand{font-size:15px;gap:9px;letter-spacing:.6px}.brand small{font-size:11px}.logo{width:36px;height:38px;font-size:25px}.header-actions{gap:7px}.header-actions>.icon{width:38px}.language-switch button{min-width:33px}.page-title{margin:26px 0 20px}h1{font-size:25px}.page-title .muted{font-size:14px;line-height:1.7}.summary article{padding:16px 14px}.summary article>span{font-size:13px}.summary small{font-size:12px}.summary strong{font-size:23px;letter-spacing:-.5px}.card-icon{font-size:16px}.month-picker{min-width:156px}#monthLabel{font-size:14px}.period>div{gap:0}.period .quiet{padding:8px;font-size:13px}.panel{padding:19px 17px}.section-head{gap:8px}h2{font-size:18px}.transactions .section-head>div{min-width:0}#export{font-size:12px;padding:8px;white-space:nowrap}.entry{grid-template-columns:32px minmax(0,1fr) minmax(92px,auto);gap:8px}.badge{width:30px;height:36px}.entry b{font-size:14px}.entry p{font-size:13px}.entry time{font-size:12px;margin-top:7px}.entry-right{max-width:146px}.entry-right strong{font-size:14px;overflow-wrap:anywhere}.actions button{padding:6px 8px;font-size:12px}.tabs{width:100%}.tabs button{flex:1;padding:7px 10px}.mobile-add{font-size:14px}.form-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.category{font-size:13px}footer{font-size:12px;padding-bottom:115px}.donut strong{font-family:"Segoe UI",Arial,sans-serif}}
+/* A dedicated mobile action area keeps the add button clear of list controls. */
+@media(max-width:650px){.app{height:100dvh;display:flex;flex-direction:column;overflow:hidden}header{flex-shrink:0}main{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;padding-bottom:12px;scrollbar-width:thin}.mobile-add{position:static;align-self:flex-end;flex-shrink:0;margin:12px 0 max(12px,env(safe-area-inset-bottom));box-shadow:0 4px 14px #15356822}footer{padding-bottom:24px}.summary article>span{font-size:14px}.summary small{font-size:13px}.entry time{font-size:13px}.entry b{font-size:15px}.actions button{font-size:13px}html[lang=th] .eyebrow{font-size:13px}.brand small{font-size:12px}}
+
+/* Final typography polish. All font assets are local and work offline. */
+:root{--ui-font:"Noto Sans Thai","Noto Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body{font-family:var(--ui-font);line-height:1.75}button,input,select{font-family:inherit}h1,h2{font-weight:700}.brand{font-weight:700}html[lang=th] h1,html[lang=th] h2,html[lang=th] .eyebrow{letter-spacing:0}
+.summary strong,.donut strong,.entry-right strong,.category b,#amount{font-family:var(--ui-font);font-variant-numeric:tabular-nums;letter-spacing:0}
+.summary strong:not(#count),.donut strong,.entry-right strong,.category b{white-space:nowrap;overflow-wrap:normal;min-width:0}
+.summary strong:not(#count){font-size:clamp(23px,2.3vw,28px)}.donut strong{width:140px;font-size:22px}.entry-right{min-width:0}.entry-right strong{max-width:100%}
+#count{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:7px;row-gap:2px}#count small{font-size:13px;font-weight:500;color:var(--text)}
+body.dark{--muted:#bdcbe0}body.dark input::placeholder{color:#aabbd2;opacity:1}
+#editor .section-head{flex-wrap:nowrap}#editor .section-head>div:first-child{min-width:0;flex:1}#editor .dialog-actions{flex-shrink:0}
+@media(max-width:650px){.summary strong:not(#count){font-size:clamp(22px,6.15vw,26px)}main{padding-bottom:calc(24px + env(safe-area-inset-bottom,0px))}.mobile-add{margin-bottom:max(12px,env(safe-area-inset-bottom,0px))}.brand small{font-size:11px}.header-actions .language-switch button{min-height:38px}.summary article>span{font-size:13px}.entry-right{max-width:148px}.entry time{display:block;margin-top:7px}#editor .eyebrow{font-size:11px}}
+
+.category b{font-weight:500}
+
+/* Compact data utilities; existing dashboard and mobile action area are unchanged. */
+.data-tools{margin-top:24px;border-top:1px solid var(--line);padding-top:20px}.data-tools h2{font-size:14px}.data-tools p{font-size:13px}.data-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.data-actions button{border:1px solid var(--line);background:var(--surface);color:var(--text);min-height:44px}.data-actions button:hover{background:var(--soft)}#backupError:empty{display:none}#restoreDialog p{margin-top:16px}#restoreDialog .confirm-actions{flex-wrap:wrap}#restoreDialog button{min-height:44px}
+
+/* Mobile page scrolls normally; only the pill floats above the safe area. */
+html.modal-open{overflow:hidden;overscroll-behavior:none}
+body.modal-open{overflow:hidden}
+body.modal-open .mobile-add{visibility:hidden;pointer-events:none}
+@media(max-width:650px){
+  .app{height:auto;min-height:100vh;min-height:100dvh;display:block;overflow:visible;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  main{overflow:visible;min-height:0;padding-bottom:calc(80px + env(safe-area-inset-bottom,0px))}
+  .mobile-add{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));margin:0;z-index:2}
+  body.modal-open{position:fixed;top:var(--locked-page-top,0px);left:0;right:0;width:100%;overscroll-behavior:none}
+  dialog{overscroll-behavior:contain;max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px)}
+  dialog#editor{
+    position:fixed;inset:auto 0 auto 0;margin:0 auto;
+    top:calc(var(--sheet-viewport-top,0px) + max(12px,env(safe-area-inset-top,0px)));
+    width:100%;max-width:650px;
+    height:calc(100vh - max(12px,env(safe-area-inset-top,0px)));
+    height:calc(var(--sheet-viewport-height,100dvh) - max(12px,env(safe-area-inset-top,0px)));
+    max-height:none;padding:0;overflow:hidden;border-radius:22px 22px 0 0;
+  }
+  #editor #form{
+    height:100%;min-height:0;overflow-y:auto;overflow-x:hidden;
+    overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
+    padding:0 max(20px,env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px));
+    scroll-padding-top:110px;scroll-padding-bottom:24px;
+  }
+  #editor .section-head{position:sticky;top:0;z-index:1;background:var(--surface);padding:20px 0 14px;align-items:center}
+  #editor #close{min-width:44px;min-height:44px;flex-shrink:0}
+  #editor input,#editor select{scroll-margin-block:16px;max-width:100%;box-sizing:border-box}
+  #editor input[type=date]{min-width:0;width:100%}
+  #editor input[type=date]::-webkit-date-and-time-value{text-align:left}
+  #editor .wide{min-height:48px}
+}
+@media(max-width:360px){
+  .brand{gap:6px;font-size:13px}.brand small{font-size:10px}.logo{width:32px;height:36px}
+  .header-actions{gap:4px}.header-actions .language-switch button{min-width:29px}.header-actions>.icon{width:34px}
+  .entry{grid-template-columns:28px minmax(0,1fr) minmax(80px,auto);gap:6px}.entry-right{max-width:120px}
+  .period .quiet{font-size:12px;padding:8px 4px}.month-picker{min-width:146px}
+}
+
+/* v1.1 wallets: current money is distinct from the existing period-based flow. */
+[hidden]{display:none!important}
+.wallet-section{margin:0 0 30px}.wallet-section>.section-head{margin-bottom:16px}
+.wallet-cards{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:16px}
+.wallet-cards article{min-width:0;padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:18px}
+.wallet-cards .wallet-total{background:#203b67;color:#fff;border-color:#203b67}
+.wallet-cards span{font-size:14px}.wallet-cards small{font-size:12px;color:#d0def4;display:block}
+.wallet-value{display:block;white-space:nowrap;font-size:clamp(24px,2.8vw,34px);font-weight:600;font-variant-numeric:tabular-nums;margin:12px 0 6px;min-width:0}
+#walletForm{margin-top:16px}#walletForm p{font-size:14px}#walletForm .data-actions .primary{background:#2859a0;color:white}#walletForm .form-grid{max-width:600px}#walletError:empty{display:none}.flow-label{margin-top:24px}
+.summary .balance{background:var(--surface);border-color:var(--line);color:var(--text)}.summary .balance>span,.summary .balance small{color:var(--muted)!important}
+.wallet-context{display:block;font-size:12px;color:var(--muted);margin-top:3px}.form-help{font-size:12px;line-height:1.6;margin:10px 0 0}.transfer{color:var(--text)}#toWallet:disabled{opacity:1;color:var(--text);-webkit-text-fill-color:var(--text)}
+@media(max-width:650px){.wallet-cards{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}.wallet-cards .wallet-total{grid-column:1/-1}.wallet-cards article{padding:18px 14px}.wallet-value{font-size:25px}.wallet-total .wallet-value{font-size:32px}.wallet-section>.section-head{align-items:flex-start;flex-wrap:wrap}.wallet-section .quiet{font-size:13px}.tabs{flex-wrap:wrap}.tabs button{min-width:calc(50% - 4px)}#walletForm{padding:18px 14px}#walletForm .data-actions{gap:6px}.wallet-section{margin-bottom:24px}}
+
+/* Native iPhone date controls need a full row, including long BE displays. */
+@media(max-width:430px){
+  #form>.form-grid:not(#transferFields){grid-template-columns:minmax(0,1fr);gap:0}
+  #editor #form>.form-grid:not(#transferFields),
+  #editor #form>.form-grid:not(#transferFields)>label,
+  #editor #form input[type=date]{min-width:0;min-inline-size:0;width:100%;inline-size:100%;max-width:100%;max-inline-size:100%;box-sizing:border-box}
+  #editor #form input[type=date]{display:block}
+  #editor #form input[type=date]::-webkit-date-and-time-value{min-width:0;min-inline-size:0;max-inline-size:100%}
+  #editor #form input[type=date]::-webkit-datetime-edit{min-width:0;min-inline-size:0;padding:0}
+}
+#form .form-grid>#error{grid-column:1/-1}
+#form [aria-invalid=true]{border-color:var(--red)}
+@media(max-width:650px){
+  .mobile-add{--fab-safe-bottom:calc(16px + env(safe-area-inset-bottom,0px));bottom:var(--fab-safe-bottom)}
+  .wallet-section.fab-clearance .wallet-cards{margin-bottom:76px}
+  .mobile-add.wallet-clearance{position:absolute;top:var(--wallet-fab-top);bottom:auto}
+}
+
+#form.has-error button[type=submit]{margin-top:16px}
+
+/* Bound the complete date sizing chain, including WebKit native appearance. */
+@media(max-width:430px){
+  #editor #form{min-width:0;min-inline-size:0;width:100%;inline-size:100%;max-width:100%;max-inline-size:100%;box-sizing:border-box}
+  #editor #form .date-field{contain:inline-size;overflow:hidden}
+  #editor #form .date-field input[type=date]{-webkit-appearance:none;appearance:none;min-width:0;min-inline-size:0;width:100%;inline-size:100%;max-width:100%;max-inline-size:100%;box-sizing:border-box}
+  #editor #form .date-field input[type=date]:focus-visible{outline-offset:-3px}
+  #editor #form .date-field input[type=date]::-webkit-date-and-time-value,
+  #editor #form .date-field input[type=date]::-webkit-datetime-edit{box-sizing:border-box;min-width:0;min-inline-size:0;max-width:100%;max-inline-size:100%}
+}
+
+/* Keep native transaction time within the existing mobile sheet. */
+#editor .time-field,#editor input[type=time]{min-width:0;min-inline-size:0;width:100%;inline-size:100%;max-width:100%;max-inline-size:100%;box-sizing:border-box}
+#editor .time-field{contain:inline-size}
+#editor input[type=time]::-webkit-date-and-time-value,#editor input[type=time]::-webkit-datetime-edit{min-width:0;min-inline-size:0;max-inline-size:100%;text-align:left}
+
+/* Reuse the existing dialog surface for first-run and later balance edits. */
+#walletDialog #walletForm{margin:0;padding:0}
+#walletDialog .form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+#walletDialog label{min-width:0}
+#walletDialog .data-actions{margin-top:20px;flex-wrap:wrap}
